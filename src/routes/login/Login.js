@@ -10,6 +10,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import ButtonContent from './MSLogin';
 import s from './Login.css';
 
 class Login extends React.Component {
@@ -20,6 +21,8 @@ class Login extends React.Component {
   render() {
     return (
       <div className={s.root}>
+        <script src="MSLogin.js">Hello</script>
+        <script>ReactLoginMS.authComplete();</script>
         <div className={s.container}>
           <h1>{this.props.title}</h1>
           <p className={s.lead}>
